@@ -937,6 +937,18 @@ footer {
     flex-direction: column !important;
     text-align: center;
     gap: 32px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-animation-container {
+    margin: 0 auto !important; /* Horizontally perfect centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0 !important; /* Agar pehle se koi left positioning di hui hai to clear ho jaye */
+  }
+  .avatar-circle {
+    margin: 0 auto !important;
   }
 
   .hero-intro {
