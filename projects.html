@@ -1,113 +1,131 @@
+z
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engineering Showcase | Fahad</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='url(%23g)'/><linearGradient id='g' x1='0%27 y1='0%27 x2='100%27 y2='100%27><stop offset='0%25' stop-color='%234f46e5'/><stop offset='100%25' stop-color='%237c3aed'/></linearGradient><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='900' font-size='18'>F</text></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='url(%23g)'/><linearGradient id='g' x1='0%27 y1='0%27 x2='100%27 y2='100%27><stop offset='0%25' stop-color='%234f46e5'/><stop offset='100%25' stop-color='%237c3aed'/></linearGradient><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='900' font-size='18'>F</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style.css">
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
+
 <body>
 
-<nav id="navbar">
-  <div class="nav-brand">
-    <div class="brand-badge">F</div>
-    <span class="brand-text">Fahad <span class="brand-sub">/ Projects</span></span>
-  </div>
-  <div class="nav-links">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About & Skills</a>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-cta">Get In Touch ✦</a>
-  </div>
-</nav>
-
-<section class="subpage-sec">
-  <div class="container-wide">
-    <div data-aos="fade-up" data-aos-duration="700">
-      <div class="section-tag">✦ Production Artifacts</div>
-      <h2 class="section-heading text-dark">Engineered Solutions Grid</h2>
+  <nav id="navbar">
+    <div class="nav-brand">
+      <div class="brand-badge">F</div>
+      <span class="brand-text">Fahad <span class="brand-sub">/ Projects</span></span>
     </div>
-
-    <div class="projects-grid">
-      
-      <!-- Project 1: FYP Prescription Interpretation System -->
-      <div class="project-show-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="project-card-header tag-ai">Computer Vision / Deep Learning</div>
-        <div class="project-card-body">
-          <h4>Medical Prescription Interpretation System</h4>
-          <p>An advanced multi-stage pipeline utilizing computer vision architectures to process handwritten healthcare scripts.</p>
-          <div class="pipeline-flow">
-            <strong>Pipeline Stack:</strong> Image Upload ➔ Region of Interest Detection via <span>YOLOv8</span> ➔ Text Recognition via <span>TrOCR Transformers</span>.
-          </div>
-          <div class="tech-tags-list">
-            <span>YOLOv8</span><span>TrOCR</span><span>Python</span><span>PyTorch</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2: Flutter Grocery Application -->
-      <div class="project-show-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="project-card-header tag-mobile">Mobile Application Architecture</div>
-        <div class="project-card-body">
-          <h4>SQLite Integrated Commerce Application</h4>
-          <p>A native user interface configured for client-side grocery transactions, complete with interactive math computation engines.</p>
-          <ul>
-            <li>Dynamic real-time cost calculation matrices.</li>
-            <li>Embedded relational local database using SQLite for absolute transaction persistence.</li>
-            <li>Direct device hardware level telephony/phone call execution integration.</li>
-          </ul>
-          <div class="tech-tags-list">
-            <span>Flutter</span><span>Dart</span><span>SQLite</span><span>Hardware Channels</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3: Food Delivery Engine (Lab Exam Scope) -->
-      <div class="project-show-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="project-card-header tag-mobile">Mobile State Management</div>
-        <div class="project-card-body">
-          <h4>Multi-User Profile System & Food Hub</h4>
-          <p>A multi-screen framework evaluating advanced persistent states and non-volatile device storage configurations.</p>
-          <ul>
-            <li>Modular dashboard tracking categorical grid menus.</li>
-            <li>Multi-user profile data processing handled safely via manual SharedPreferences triggering mechanisms upon direct action hooks.</li>
-          </ul>
-          <div class="tech-tags-list">
-            <span>Flutter Engine</span><span>Dart Ecosystem</span><span>SharedPreferences</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4: Web Form Security & Validation Engine -->
-      <div class="project-show-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="project-card-header tag-web">Web Engineering Fundamentals</div>
-        <div class="project-card-body">
-          <h4>Secure Authentication & Session Framework</h4>
-          <p>A server-side verified secure web stack tracking stateless cookies and multi-state active user logins.</p>
-          <ul>
-            <li>Server-side regex form field filtering written in core native PHP.</li>
-            <li>Relational MySQL user lookup tables.</li>
-            <li>State retention through explicit session management arrays.</li>
-          </ul>
-          <div class="tech-tags-list">
-            <span>PHP Scripting</span><span>MySQL</span><span>JavaScript Validation</span><span>CSS3 Grid</span>
-          </div>
-        </div>
-      </div>
-
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </div>
-</section>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About & Skills</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-cta">Get In Touch ✦</a>
+    </div>
+  </nav>
 
-<footer>
-  <span class="footer-meta">Muhammad Fahad Rauf Hashmi</span>
-  <span class="footer-inst">NUML · Department of Software Engineering</span>
-</footer>
+  <section class="subpage-sec">
+    <div class="container-wide">
+      <div data-aos="fade-up" data-aos-duration="700">
+        <div class="section-tag">✦ Production Artifacts</div>
+        <h2 class="section-heading text-dark">Engineered Solutions Grid</h2>
+      </div>
 
-<script src="./assets/script.js"></script>
+      <div class="projects-grid">
+
+        <!-- Project 1: FYP Prescription Interpretation System -->
+        <div class="project-show-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-header tag-ai">Computer Vision / Deep Learning</div>
+          <div class="project-card-body">
+            <h4>Medical Prescription Interpretation System</h4>
+            <p>An advanced multi-stage pipeline utilizing computer vision architectures to process handwritten
+              healthcare scripts.</p>
+            <div class="pipeline-flow">
+              <strong>Pipeline Stack:</strong> Image Upload ➔ Region of Interest Detection via <span>YOLOv8</span> ➔
+              Text Recognition via <span>TrOCR Transformers</span>.
+            </div>
+            <div class="tech-tags-list">
+              <span>YOLOv8</span><span>TrOCR</span><span>Python</span><span>PyTorch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Flutter Grocery Application -->
+        <div class="project-show-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-header tag-mobile">Mobile Application Architecture</div>
+          <div class="project-card-body">
+            <h4>SQLite Integrated Commerce Application</h4>
+            <p>A native user interface configured for client-side grocery transactions, complete with interactive math
+              computation engines.</p>
+            <ul>
+              <li>Dynamic real-time cost calculation matrices.</li>
+              <li>Embedded relational local database using SQLite for absolute transaction persistence.</li>
+              <li>Direct device hardware level telephony/phone call execution integration.</li>
+            </ul>
+            <div class="tech-tags-list">
+              <span>Flutter</span><span>Dart</span><span>SQLite</span><span>Hardware Channels</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Food Delivery Engine (Lab Exam Scope) -->
+        <div class="project-show-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card-header tag-mobile">Mobile State Management</div>
+          <div class="project-card-body">
+            <h4>Multi-User Profile System & Food Hub</h4>
+            <p>A multi-screen framework evaluating advanced persistent states and non-volatile device storage
+              configurations.</p>
+            <ul>
+              <li>Modular dashboard tracking categorical grid menus.</li>
+              <li>Multi-user profile data processing handled safely via manual SharedPreferences triggering mechanisms
+                upon direct action hooks.</li>
+            </ul>
+            <div class="tech-tags-list">
+              <span>Flutter Engine</span><span>Dart Ecosystem</span><span>SharedPreferences</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Web Form Security & Validation Engine -->
+        <div class="project-show-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card-header tag-web">Web Engineering Fundamentals</div>
+          <div class="project-card-body">
+            <h4>Secure Authentication & Session Framework</h4>
+            <p>A server-side verified secure web stack tracking stateless cookies and multi-state active user logins.
+            </p>
+            <ul>
+              <li>Server-side regex form field filtering written in core native PHP.</li>
+              <li>Relational MySQL user lookup tables.</li>
+              <li>State retention through explicit session management arrays.</li>
+            </ul>
+            <div class="tech-tags-list">
+              <span>PHP Scripting</span><span>MySQL</span><span>JavaScript Validation</span><span>CSS3 Grid</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-meta">Muhammad Fahad Rauf Hashmi</span>
+    <span class="footer-inst">NUML · Department of Software Engineering</span>
+  </footer>
+
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
