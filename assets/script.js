@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── 1. AOS ANIMATION SYSTEM INITIALIZATION ──
   if (typeof AOS !== 'undefined') {
-    AOS.init({ 
-      once: true, 
-      easing: 'ease-out-cubic' 
+    AOS.init({
+      once: true,
+      easing: 'ease-out-cubic'
     });
   }
 
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      navbar.style.boxShadow = window.scrollY > 10 
-        ? '0 4px 30px rgba(79,70,229,.13)' 
+      navbar.style.boxShadow = window.scrollY > 10
+        ? '0 4px 30px rgba(79,70,229,.13)'
         : '0 2px 20px rgba(79,70,229,.06)';
     });
   }
@@ -35,25 +35,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeElement) {
     function executeTypingLoop() {
       const currentFullPhrase = phrases[pi];
-      if (!deleting) { 
-        typeElement.textContent = currentFullPhrase.slice(0, ++ci); 
-        if (ci === currentFullPhrase.length) { 
-          deleting = true; 
-          setTimeout(executeTypingLoop, 1800); 
-          return; 
-        } 
-      } else { 
-        typeElement.textContent = currentFullPhrase.slice(0, --ci); 
-        if (ci === 0) { 
-          deleting = false; 
-          pi = (pi + 1) % phrases.length; 
-        } 
+      if (!deleting) {
+        typeElement.textContent = currentFullPhrase.slice(0, ++ci);
+        if (ci === currentFullPhrase.length) {
+          deleting = true;
+          setTimeout(executeTypingLoop, 1800);
+          return;
+        }
+      } else {
+        typeElement.textContent = currentFullPhrase.slice(0, --ci);
+        if (ci === 0) {
+          deleting = false;
+          pi = (pi + 1) % phrases.length;
+        }
       }
       setTimeout(executeTypingLoop, deleting ? 38 : 62);
     }
     executeTypingLoop();
   }
 
+  // ── 4. HAMBURGER MENU ──
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
   // ── 4. NEURAL NETWORK PARTICLES CANVAS COMPUTATION ENGINE ──
   const canvas = document.getElementById('neural-canvas');
   if (canvas) {
@@ -72,9 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize analytical space nodes matrix
     for (let i = 0; i < NODE_COUNT; i++) {
       nodes.push({
-        x: Math.random() * W, 
+        x: Math.random() * W,
         y: Math.random() * H,
-        vx: (Math.random() - .5) * .45, 
+        vx: (Math.random() - .5) * .45,
         vy: (Math.random() - .5) * .45,
         r: 2.5 + Math.random() * 2.5,
         pulse: Math.random() * Math.PI * 2,
@@ -89,10 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
       mouse.x = e.clientX - rect.left;
       mouse.y = e.clientY - rect.top;
     });
-    
-    canvas.addEventListener('mouseleave', () => { 
-      mouse.x = -999; 
-      mouse.y = -999; 
+
+    canvas.addEventListener('mouseleave', () => {
+      mouse.x = -999;
+      mouse.y = -999;
     });
 
     // Elevate touch context properties safely
@@ -118,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.stroke();
           }
         }
-        
+
         // Active mouse position hardware tracking mapping
         const mdx = nodes[i].x - mouse.x, mdy = nodes[i].y - mouse.y;
         const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
